@@ -1,8 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Plant, type: :model do
-  let!(:plant) { Plant.new(name: "Aloe", image: "./images/aloe.jpg", price: 15.99) }
-
+  # pending "add some examples to (or delete) #{__FILE__}"
+    let!(:plant) { Plant.new(name: "Aloe", image: "./images/aloe.jpg", price: 15.99) }
+  
   describe '#name' do
     it 'returns the plant\'s name' do
       expect(plant.name).to eq('Aloe')
